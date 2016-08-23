@@ -89,9 +89,11 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <clobbers target="window.Metadata" />
     </js-module>
 
+    <!--
     <js-module src="www/ProgressEvent.js" name="ProgressEvent">
         <clobbers target="window.ProgressEvent" />
     </js-module>
+    -->
 
     <js-module src="www/fileSystems.js" name="fileSystems" />
 
