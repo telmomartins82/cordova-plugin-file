@@ -155,8 +155,8 @@ to config.xml in order for the application to find previously stored files.
         <source-file src="src/android/ContentFilesystem.java" target-dir="src/org/apache/cordova/file" />
         <source-file src="src/android/AssetFilesystem.java" target-dir="src/org/apache/cordova/file" />
         <source-file src="src/android/PendingRequests.java" target-dir="src/org/apache/cordova/file" />
-        <preference name="AndroidPersistentFileLocation" default="Compatibility" />
-        <preference name="AndroidExtraFilesystems" default="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
+        <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+        <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
       
         <!-- android specific file apis -->
         <js-module src="www/android/FileSystem.js" name="androidFileSystem">
