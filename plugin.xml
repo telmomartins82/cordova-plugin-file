@@ -139,6 +139,7 @@ to config.xml in order for the application to find previously stored files.
         </edit-config>
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
         </config-file>
 
         <source-file src="src/android/EncodingException.java" target-dir="src/org/apache/cordova/file" />
@@ -154,7 +155,9 @@ to config.xml in order for the application to find previously stored files.
         <source-file src="src/android/ContentFilesystem.java" target-dir="src/org/apache/cordova/file" />
         <source-file src="src/android/AssetFilesystem.java" target-dir="src/org/apache/cordova/file" />
         <source-file src="src/android/PendingRequests.java" target-dir="src/org/apache/cordova/file" />
-
+        <preference name="AndroidPersistentFileLocation" default="Compatibility" />
+        <preference name="AndroidExtraFilesystems" default="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
+      
         <!-- android specific file apis -->
         <js-module src="www/android/FileSystem.js" name="androidFileSystem">
             <merges target="FileSystem" />
